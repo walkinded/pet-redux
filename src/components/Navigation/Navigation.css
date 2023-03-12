@@ -1,0 +1,23 @@
+.nav {
+  max-width: 100%;
+  width: auto;
+  height: 50px;
+  background-color: lightslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.nav span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav span a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.nav span a:hover {
+  opacity: 0.3;
+}
