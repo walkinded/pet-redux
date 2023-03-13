@@ -1,0 +1,21 @@
+.InputSearch_wrap {
+  position: relative;
+  width: 300px;
+}
+
+.InputSearch_wrap input {
+  width: -webkit-fill-available;
+  height: 40px;
+  border: 1px solid lightslategrey;
+  border-radius: 5px;
+}
+
+.InputSearch_wrap .result {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+}

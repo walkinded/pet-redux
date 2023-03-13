@@ -1,0 +1,39 @@
+.page_container {
+  padding: 20px;
+}
+
+.inputSearch_wrap {
+  position: relative;
+  width: 300px;
+}
+
+.inputSearch_wrap input {
+  width: -webkit-fill-available;
+  height: 40px;
+  border: 1px solid lightslategrey;
+  border-radius: 5px;
+}
+
+.inputSearch_wrap .result {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.inputSearch_wrap .result li {
+  padding: 2px 10px;
+}
+
+.inputSearch_wrap .result li:hover {
+  background-color: lightslategrey;
+  color: white;
+  cursor: pointer;
+}
