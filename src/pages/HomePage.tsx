@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import InputSearch from '../components/InputSearch';
 import './Pages.css';
+import '../components/RepoCard/RepoCard.css';
 import { useDebounce } from '../hooks/debounce';
 import {
   useLazyGetUserReposQuery,
   useSearchUsersQuery,
 } from '../store/github/github.api';
+import RepoCard from '../components/RepoCard/RepoCard';
 
 const HomePage = () => {
   const [search, setSearch] = useState('');
@@ -24,6 +25,7 @@ const HomePage = () => {
 
   const cleckHandler = (username: string) => {
     fetchRepos(username);
+    setDropdown(false);
   };
 
   useEffect(() => {
@@ -53,10 +55,10 @@ const HomePage = () => {
         )}
       </div>
 
-      <div>
+      <div className='container'>
         {isReposLoading && <p>Loading</p>}
         {repos?.map((repo) => (
-          <p>{repo.url}</p>
+          <RepoCard key={repo.id} repo={repo} />
         ))}
       </div>
     </div>

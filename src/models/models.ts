@@ -1,28 +1,28 @@
 export interface ServerResponce<T> {
-  totalCount: number;
-  incompleteResults: boolean;
+  total_count: number;
+  incomplete_results: boolean;
   items: T[];
 }
 
 export interface IUser {
   login: string;
   id: number;
-  nodeID: string;
-  avatarURL: string;
-  gravatarID: string;
+  node_id: string;
+  avatar_url: string;
+  gravatar_id: string;
   url: string;
-  htmlURL: string;
-  followersURL: string;
-  followingURL: string;
-  gistsURL: string;
-  starredURL: string;
-  subscriptionsURL: string;
-  organizationsURL: string;
-  reposURL: string;
-  eventsURL: string;
-  receivedEventsURL: string;
+  html_url: string;
+  followers_url: string;
+  following_url: string;
+  gists_url: string;
+  starred_url: string;
+  subscriptions_url: string;
+  organizations_url: string;
+  repos_url: string;
+  events_url: string;
+  received_events_url: string;
   type: string;
-  siteAdmin: boolean;
+  site_admin: boolean;
   score: number;
 }
 
